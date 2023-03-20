@@ -12,6 +12,6 @@ void tachBit(int n) {
 
 void main() {
 	unsigned int n=0;
-	printf("Nhap vao so n o dang Thap phan:"); scanf("%d", &n);printf("so vua nhap %d(0x%x)\r\n", n, n);
+	printf("Nhap vao so nguyen N o dang Thap phan:"); scanf("%d", &n);printf("So vua nhap %d(0x%x)\r\n", n, n);
 	tachBit(n);
 }

@@ -13,8 +13,8 @@ typedef struct {
 
 const char* data = "HTTP1.1 200 OK{"\
 "\"light\": \"on\","\
-"\"fan\" : \"on\","\
-"\"motor\" : \"on\"}";
+"\"fan\" : \"off\","\
+"\"motor\" : \"off\"}";
 
 smartHome_t pair_data(const char* data) {
 	smartHome_t A;
@@ -31,7 +31,7 @@ smartHome_t pair_data(const char* data) {
 		else A.fan = 0;
 		if (strcmp(statusMotor,buf_on)==0) A.motor = 1;
 		else A.motor = 0;
-		return ;
+		return A;
 }
 int main()
 {

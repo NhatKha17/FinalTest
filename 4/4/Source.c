@@ -3,7 +3,7 @@
 #include <Windows.h>
 DWORD WINAPI function(LPVOID parameter) 
 {
-	Sleep(500);
+	Sleep(500);//delay thread 500ms 
 	while (1) {
 		 {
 			printf("Xin chao\r\n");
